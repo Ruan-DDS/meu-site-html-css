@@ -1,0 +1,151 @@
+/* Reset Básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o Body */
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Centralização Padrão */
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Estilizando o HEADER */
+header{
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+}
+/* Estilzar o conteiner dentro do header */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilizando o MENU */
+nav ul{
+    list-style: none; /* Remover marcadores */
+    display: flex; /* Alinhar Horizontalmente */
+    gap: 20px; /* Espaçamento entre itens */
+    margin-top: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none; /* Remover sublinhado */
+    font-weight: bold; /* largura da fonte */
+    padding: 5px 5px; /* necessário para aparecer o efeito */
+    /* Tempo de transição */
+    transition: all 0.3s ease; /* ease é um efeito suave */
+}
+nav a:hover{ /* Ao passar o mouse por cima */
+    text-decoration: underline;
+    color: yellow;
+    background-color: rgba(255,255, 255, 0.2); /* 20% do preto */
+    border-radius: 8px; /* Arredondar os cantos */
+}
+
+/* Estilizando o Main */
+main{
+    padding: 30px; /* espaço interno */
+}
+section{
+    margin-bottom: 30px;
+}
+article{
+    background-color: #f1f5f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+/* Estilizando o Rodapé - Footer */
+footer{
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Criando o Hero Section */
+.hero{
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #1e3a8a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.hero button:hover{
+    background: #f0e6e2;
+}
+.sobre{
+    padding: 80px 0;
+    text-align: center;
+}
+.sobre button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.sobre button:hover{
+    background: green;
+    }
+
+/*Estilizando a seção serviços */
+.servico{
+    background: #f1f5f9;
+    padding: 80px;
+}
+.grid-servicos{
+    display: grid;/*Ativa o sistema de Layout Grid*/
+    grid-template-columns: repeat(3, 1fr);/*Criando 3 colunas e cada coluna ocupando 1 fração do espaço disponível*/
+    gap: 20px;/*distanciamento dos serviços*/
+}
+.card{
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.card:hover{
+    /*transform: rotate(360deg); para rodar 360 graus*/
+    transform: scale(1.2) translateY(-5px);
+    /* efeito profundidade com sombra */
+    box-shadow:  0 10px 20px rgba(0, 0, 0, 0.1);
+    /*transform: translateY(-5px);Movendo o card 5px para cima*/
+    background: blue;
+    color: white;
+    border: 1px solid red;/*para colocar borda nos serviços*/
+
+}
+/* Estlizando o contato */
+.contato{
+    padding: 8px 0;
+    text-align: center;
+    padding: 30px;
+    transition: 0.3s ease;
+}

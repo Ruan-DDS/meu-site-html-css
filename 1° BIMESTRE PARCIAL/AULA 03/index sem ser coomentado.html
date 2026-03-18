@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Define que estamos usando HTML5 -->
+<html lang="pt-BR"> <!-- Define o Idioma -->
+<head>
+    <!-- Metas tags -->
+    <meta charset="UTF-8"> <!-- Permite acentuação -->
+    <!-- Tags Principais -->
+    <title>Meu Primeiro Layout</title>
+    <!-- Links CSS, JS -->
+    <link rel="stylesheet" href="layout2.css"> <!--Conecta o CSS Externo-->    
+</head>
+<body>
+    <!-- Cabeçalho dentro do Body - Parte superior do Site -->
+    <header>
+        <div class="container">
+            <a href=""></a>
+            <h1>Meu Site</h1> <!-- Título em destaque -->
+            <!-- Área de navegação -->
+            <nav>
+                <!-- Lista não ordenada - SERVE COMO MENU -->
+                <ul>
+                    <!-- Ítens da lista -->
+                    <li><a href="#inicio">Início</a></li> <!-- <a> links -->
+                    <li><a href="#sobre">Sobre</a></li> <!-- <a> links -->
+                    <li><a href="#servico">Serviços</a></li> <!-- <a> links -->
+                    <li><a href="#contato">Contato</a></li> <!-- <a> links -->
+                    <li><a href="#noticias">Notícias</a></li> <!-- <a> links -->
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- INÍCIO DO CONTEÚDO PRINCIPAL -->
+    <main>
+        <section id="inicio" class="hero">
+            <div class="conteiner">
+                <h2>Bem-vindo ao nosso Site</h2>
+                <p>Este é um exemplo de layout Semântico usando HTML5.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="conteiner">
+                <h2>Sobre nós</h2>
+                <p>Somos especialistas em desenvolvimento web FullStack.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </section>
+        
+        <section id="servico" class="servico">
+            <div class="conteiner grid-servicos">
+                <div class="card">
+                    <h3>Serviço 1</h3>
+                    <p>Descrição do serviço oferecido.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Serviço 2</h3>
+                    <p>Descrição do serviço oferecido.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Serviço 3</h3>
+                    <p>Descrição do serviço oferecido.</p>
+                </div>                
+            </div>
+        </section>        
+
+        <section id="contato" class="contato">
+            <div class="conteiner">
+                <h2>Nossos Contatos</h2>
+                <p>E-mail: contato@mail.com</p>
+                <p>Telefones: (88) 9.9999-9999</p>
+            </div>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h3>Notícia 1</h3>
+                <p>Conteúdo da primeira notícia</p>
+            </article>
+        </section>
+
+
+        <section>
+            <article>
+                <h3>Notícia 2</h3>
+                <p>Conteúdo da segunda notícia</p>
+            </article>
+        </section>
+
+    </main>
+    <!-- Rodape da página -->
+    <footer>
+        <p>&copy; 2026 - Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

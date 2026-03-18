@@ -1,0 +1,341 @@
+/* =========================================================
+   VARIÁVEIS GLOBAIS DE ESTILO
+   ---------------------------------------------------------
+   Declaradas em :root para ficarem disponíveis
+   em todo o projeto.
+   Isso facilita manutenção, padronização
+   e é prática profissional.
+========================================================= */
+:root {
+    /* Cor principal usada em botões, links e destaques */
+    --cor-primaria: #6366f1;
+
+    /* Cor escura usada em títulos e elementos fortes */
+    --cor-secundaria: #0f172a;
+
+    /* Cor de fundo geral da página */
+    --cor-fundo: #f8fafc;
+
+    /* Fundo dos cards (sections, aside, etc) */
+    --cor-card: #ffffff;
+
+    /* Cor padrão dos textos */
+    --cor-texto: #334155;
+
+    /* Cor para textos secundários, legendas e footer */
+    --cor-texto-claro: #94a3b8;
+
+    /* Raio padrão para bordas arredondadas */
+    --borda-radius: 12px;
+}
+
+/* =========================================================
+   RESET BÁSICO
+   ---------------------------------------------------------
+   Remove estilos padrão do navegador e
+   garante previsibilidade no layout.
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Faz padding e border não alterarem o tamanho final */
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   ESTILO GLOBAL DO SITE
+========================================================= */
+body {
+    /* Fonte moderna usando fontes do próprio sistema */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Cor de fundo geral */
+    background-color: var(--cor-fundo);
+
+    /* Cor padrão do texto */
+    color: var(--cor-texto);
+
+    /* Altura de linha para melhor leitura */
+    line-height: 1.6;
+}
+
+/* =========================================================
+   HEADER (CABEÇALHO)
+========================================================= */
+header {
+    /* Degradê moderno no fundo */
+    background: linear-gradient(
+        135deg,
+        var(--cor-primaria),
+        #4f46e5
+    );
+
+    /* Texto branco para contraste */
+    color: #fff;
+
+    /* Espaçamento interno */
+    padding: 2rem;
+}
+
+/* Título principal do header */
+header h1 {
+    font-size: 2rem;
+}
+
+/* Texto auxiliar do header */
+header p {
+    /* Leve transparência para hierarquia visual */
+    opacity: 0.9;
+
+    /* Espaço abaixo do texto */
+    margin-bottom: 1rem;
+}
+
+/* =========================================================
+   MENU DE NAVEGAÇÃO
+========================================================= */
+nav ul {
+    /* Remove bolinhas da lista */
+    list-style: none;
+
+    /* Alinha os itens horizontalmente */
+    display: flex;
+
+    /* Espaçamento entre os links */
+    gap: 1.5rem;
+}
+
+/* Links do menu */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+
+    /* Necessário para posicionar o ::after */
+    position: relative;
+}
+
+/* ---------------------------------------------------------
+   Efeito underline moderno usando pseudo-elemento
+--------------------------------------------------------- */
+nav a::after {
+    content: "";
+
+    /* Posicionamento relativo ao link */
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    /* Começa invisível */
+    width: 0;
+    height: 2px;
+
+    /* Cor do underline */
+    background: #fff;
+
+    /* Animação suave */
+    transition: width 0.3s;
+}
+
+/* Ao passar o mouse, a linha cresce */
+nav a:hover::after {
+    width: 100%;
+}
+
+/* =========================================================
+   LAYOUT PRINCIPAL
+========================================================= */
+main {
+    /* Largura máxima para telas grandes */
+    max-width: 1200px;
+
+    /* Centraliza o conteúdo */
+    margin: 2rem auto;
+
+    /* Espaçamento lateral */
+    padding: 0 1rem;
+
+    /* Layout em grid */
+    display: grid;
+
+    /* Duas colunas:
+       - Conteúdo principal (3 partes)
+       - Aside (1 parte) */
+    grid-template-columns: 3fr 1fr;
+
+    /* Espaço entre as colunas */
+    gap: 2rem;
+}
+
+/* =========================================================
+   SEÇÕES E ASIDE (CARDS)
+========================================================= */
+section,
+aside {
+    /* Fundo branco tipo card */
+    background: var(--cor-card);
+
+    /* Espaçamento interno */
+    padding: 1.5rem;
+
+    /* Bordas arredondadas */
+    border-radius: var(--borda-radius);
+
+    /* Sombra suave para efeito de elevação */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos das seções */
+section h2,
+aside h2 {
+    margin-bottom: 1rem;
+    color: var(--cor-secundaria);
+}
+
+/* =========================================================
+   ARTICLES (CONTEÚDOS INTERNOS)
+========================================================= */
+article {
+    /* Espaço acima do artigo */
+    margin-top: 1rem;
+
+    /* Espaço interno superior */
+    padding-top: 1rem;
+
+    /* Linha separadora */
+    border-top: 1px solid #e2e8f0;
+}
+
+article h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* =========================================================
+   IMAGENS E FIGURE
+========================================================= */
+figure {
+    margin-top: 1rem;
+}
+
+figure img {
+    /* Imagem responsiva */
+    width: 100%;
+
+    /* Mantém padrão visual */
+    border-radius: var(--borda-radius);
+}
+
+/* Legenda da imagem */
+figcaption {
+    font-size: 0.85rem;
+    color: var(--cor-texto-claro);
+    margin-top: 0.5rem;
+}
+
+/* =========================================================
+   LISTAS
+========================================================= */
+ul,
+ol {
+    /* Recuo padrão das listas */
+    padding-left: 1.2rem;
+
+    /* Espaço acima */
+    margin-top: 0.5rem;
+}
+
+/* =========================================================
+   FORMULÁRIO
+========================================================= */
+form {
+    margin-top: 1rem;
+}
+
+/* Rótulos dos campos */
+label {
+    display: block;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+/* Campos de entrada */
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.3rem;
+
+    border-radius: var(--borda-radius);
+    border: 1px solid #cbd5f5;
+
+    /* Mantém a fonte do site */
+    font-family: inherit;
+}
+
+/* ---------------------------------------------------------
+   Estado de foco (acessibilidade + UX)
+--------------------------------------------------------- */
+input:focus,
+textarea:focus {
+    outline: none;
+
+    /* Destaque na borda */
+    border-color: var(--cor-primaria);
+
+    /* Anel de foco moderno */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* =========================================================
+   BOTÃO
+========================================================= */
+button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+
+    background: var(--cor-primaria);
+    color: #fff;
+
+    border: none;
+    border-radius: var(--borda-radius);
+
+    font-weight: bold;
+    cursor: pointer;
+
+    /* Animações suaves */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito hover do botão */
+button:hover {
+    /* Leve elevação */
+    transform: translateY(-2px);
+
+    /* Sombra mais forte */
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* =========================================================
+   FOOTER (RODAPÉ)
+========================================================= */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--cor-texto-claro);
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+@media (max-width: 900px) {
+    /* Layout vira uma coluna no mobile */
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    /* Menu quebra linha se necessário */
+    nav ul {
+        flex-wrap: wrap;
+    }
+}

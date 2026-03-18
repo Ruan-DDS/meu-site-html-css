@@ -1,0 +1,29 @@
+body{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+}
+
+
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+.meu-paragrafo{
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 15px;
+    color:blueviolet
+}
+
+#p1{
+    color: blue;
+    background-color: brown;
+    border-radius: 50px;
+}
+#p2{
+    color: chartreuse;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+

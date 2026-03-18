@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head>
+    <!-- Metas tags -->
+    <meta charset="UTF-8"> 
+    <title>Meu Primeiro Layout</title>
+    <!-- Links CSS, JS -->
+    <link rel="stylesheet" href="sytle.css"> 
+</head>
+<body>
+        <header>
+            <div class="container">
+
+            
+            <h1>Linus Torvalds</h1>
+            <img src="Imagens/image.png" alt="pinguim" class="pinguim">
+            <nav>
+                <ul>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Habilidades">Habilidades</a></li> 
+                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+</header>
+
+    <main>
+        <section id="Sobre" class="Sobre">
+            <div class="conteiner">
+                <img src="Imagens/imagemti.png" alt="imagemti" class="imagemti">
+                <h2>Sobre mim</h2>
+                <p>Linus Torvalds é um programador da Finlândia que criou o Linux em 1991 enquanto estudava na Universidade de Helsinque. Seu projeto se tornou um dos sistemas mais usados do mundo, presente em servidores, supercomputadores e celulares Android. </p>
+                <a href="https://pt.wikipedia.org/wiki/Linus_Torvalds">
+                <button class="botao">Saiba Mais</button>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="Habilidades" class="Habilidades">
+            <div class="conteiner grid-servicos">
+                    <h2>Habilidades</h2>
+                <div class="card">
+                    <h3>Engenheiro de Software</h3>
+                    <p>Cria e mantém programas, sites e sistemas de computador usando programação.</p>
+                    <a href="https://querobolsa.com.br/carreiras-e-profissoes/engenheiro-de-software">
+                    <button class="botao">Saiba Mais</button>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Sistemas Operacionais</h3>
+                    <p>Controlam o funcionamento do computador e dos programas.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Sistema_operativo">
+                    <button class="botao">Saiba Mais</button>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Programação de Sistemas</h3>
+                    <p>Criação de softwares que controlam o funcionamento do computador e do hardware.</p>
+                    <a href="https://querobolsa.com.br/carreiras-e-profissoes/programador-de-sistemas-de-informacao">
+                    <button class="botao">Saiba Mais</button>
+                    </a>
+
+                </div>
+                <div class="card">
+                    <h3>Desenvolvimento de Software Livre</h3>
+                    <p>criação de programas com código aberto, que qualquer pessoa pode usar, estudar e modificar.</p>
+                    <a href="https://pt.wikipedia.org/wiki/Desenvolvimento_de_Software_Livre">
+                    <button class="botao">Saiba Mais</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Analista de Sistemas</h3>
+                    <p>Analisa, planeja e organiza sistemas de software para atender às necessidades de uma empresa.</p>
+                    <a href="https://querobolsa.com.br/carreiras-e-profissoes/analista-de-sistemas">
+                    <button class="botao">Saiba Mais</button>
+                    </a>
+                </div>
+            </div>
+        </section>        
+
+
+        <section id="Projetos" class="Projetos">
+
+            <h2>Projetos</h2>
+            <article>
+                <h3>Meu Primeiro Site da Minha Carreira</h3>
+                <p>Quando ele era apenas um adolescente tinha uma curiosidade pela tecnologia e aprendeu com alguns livros a mexer no HTML e no CSS</p>
+                <a href="Link utilizado no site do linus torvald/index.html">
+                <button class="botao">Saiba Mais</button>
+                </a>
+            </article>
+        </section>
+        <section id="Projetos" class="Projetos">
+            <article>
+                <h3>Por que sua logo de sistema é um pinguim?</h3>
+                <p>Quando criança visitava um zoológico, onde foi mordido pelo pinguim, um incidente que criou o logotipo do penguim</p>
+                <a href="https://www.linuxfoundation.org/blog/open-source-symbolism-exploring-the-stories-behind-linux-foundation-project-mascots-and-logos#:~:text=Tux%3A%20o%20simp%C3%A1tico%20pinguim%20do%20Linux%20deu%20in%C3%ADcio%20a%20tudo.&text=Durante%20uma%20visita%20a%20um,a%20personifica%C3%A7%C3%A3o%20da%20comunidade%20Linux.">
+                <button class="botao">Saiba Mais</button>
+                </a>
+            </article>
+        </section>
+
+        <section id="Contato" class="Contato">
+            <div class="conteiner">
+                <h2>Nossos contatos</h2>
+                    <form>
+
+                        <fieldset>
+
+                    <legend>Fale conosco</legend>
+
+                    <label for="nome">Nome:</label>
+                    
+                    <input type="text" id="nome" name="nome">
+
+                    <label for="email">Email:</label>
+
+                    <input type="email" id="email" name="email">
+
+                    <label for="mensagem">Mensagem:</label>
+
+                    <textarea id="mensagem" name="mensagem"></textarea>
+
+                    <button type="submit">Enviar</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+        
+</main>
+<footer>
+    <p>&copy; 2026 - Linus Torvalds. Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+
+<!-- Por que a estrutura semântica é importante no desenvolvimento de páginas 
+web? -->
+
+<!-- Resposta: pois com ele torna-se o desenvolvimento de sites mais organizados e mais simples de se entender. -->

@@ -1,0 +1,97 @@
+
+/* Reset Básico👨‍💻 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilizando o Header🥳 */
+header{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+/* Estilizar o container dentro do header */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilizando o MENU */
+nav ul{
+    list-style: none; /* Remover marcador*/
+    display: flex; /* Alinha horizontalmente*/
+    gap: 20px; /* Espaçamento entre linhas*/
+    margin-top: 15px; /* Distancia mais do titulo*/
+}
+nav a{
+    color: white;
+    text-decoration: none;/*Remover sublinhado */
+    font-weight: bold;/* largura da fonte*/
+    padding: 5px 5px;/*Necessário para aparecer o efeito */
+    transition: all 0.5s ease;/* Ease: efeito suave*/
+}
+nav a:hover{/* Ao passar o mouse fazer alguma coisa*/
+    text-decoration: underline;
+    color: yellow;
+    background-color: rgba(255, 255, 255, 0.2);/* 20% preto*/
+    border-radius: 8px; /* Arredondando os cantos*/
+}
+/* Estilizando o body */
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Centralização padrão */
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Estilizando o main */
+main{
+    padding: 30px; /*espaço interno*/
+}
+section{
+    margin-bottom: 30px;
+}
+article{
+    background-color: gray;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+/* Estilizando o rodapé - footer */
+footer{
+    background-color: rgb(86, 192, 125);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Criando o hero section */
+.hero{
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    color: 100px 0;
+    text-align: center;
+}
+.hero button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #1e3a8a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.hero button:hover{
+    background: greenyellow;
+}
+.sobre{
+    padding: 80px 0;
+    text-align: center;
+}

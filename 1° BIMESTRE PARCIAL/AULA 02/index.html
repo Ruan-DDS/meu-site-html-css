@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Define que o documento usa HTML5 -->
+<html lang="pt-BR">
+<!-- Define o idioma da página (importante para acessibilidade e SEO) -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres (acentos, ç, etc.) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz o site se adaptar a telas menores (responsividade) -->
+
+    <title>Layout Semântico</title>
+    <!-- Título que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="teste.css">
+    <!-- Importa o CSS externo -->
+</head>
+
+<body>
+<!-- Corpo do site, tudo que aparece para o usuário -->
+
+    <header>
+    <!-- Cabeçalho do site -->
+
+        <h1>Meu Site Semântico</h1>
+        <!-- Título principal da página -->
+
+        <p>Exemplo de layout com HTML5</p>
+        <!-- Texto descritivo -->
+
+        <nav>
+        <!-- Área de navegação -->
+
+            <ul>
+            <!-- Lista não ordenada -->
+
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            <!-- Links de navegação -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Conteúdo principal do site -->
+
+        <section>
+        <!-- Seção sobre o site -->
+
+            <h2>Sobre</h2>
+
+            <article>
+            <!-- Conteúdo independente dentro da seção -->
+
+                <h3>Quem somos</h3>
+
+                <p>
+                    <!-- Parágrafo -->
+                    Este site usa <strong>HTML semântico</strong>,
+                    <!-- strong = texto com importância -->
+                    <em>boas práticas</em> e estrutura organizada.
+                    <!-- em = ênfase, itálico -->
+                </p>
+
+                <figure>
+                <!-- Agrupa imagem e legenda -->
+
+                    <img src="https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg" alt="Imagem exemplo">
+                    <!-- alt é obrigatório para acessibilidade -->
+
+                    <figcaption>Figura ilustrativa</figcaption>
+                    <!-- Legenda da imagem -->
+
+                </figure>
+            </article>
+        </section>
+        <section id="s1" class="Sobre"
+        <section> 
+        <!-- Seção de serviços -->
+            
+            <h2>Serviços</h2>
+
+            <article>
+                <h3>Desenvolvimento Web</h3>
+
+                <p>
+                    Criação de sites com 
+                    <abbr title="HyperText Markup Language">HTML</abbr> e CSS.
+                    <!-- abbr mostra significado ao passar o mouse -->
+                </p>
+            </article>
+
+            <article>
+                <h3>Outros Serviços</h3>
+
+                <ul>
+                <!-- Lista não ordenada -->
+                    <li>Design Responsivo</li>
+                    <li>Acessibilidade</li>
+                    <li>SEO</li>
+                </ul>
+            </article>
+        </section>
+
+        <aside>
+        <!-- Conteúdo complementar -->
+
+            <h2>Conteúdo Relacionado</h2>
+            <p>Dicas e links úteis.</p>
+
+            <ol>
+            <!-- Lista ordenada -->
+                <li>HTML Semântico</li>
+                <li>CSS Externo</li>
+                <li>Boas Práticas</li>
+            </ol>
+        </aside>
+
+        <section>
+        <!-- Seção de formulário -->
+
+            <h2>Contato</h2>
+
+            <form>
+            <!-- Formulário -->
+
+                <fieldset>
+                <!-- Agrupa campos do formulário -->
+
+                    <legend>Fale conosco</legend>
+                    <!-- Título do fieldset -->
+
+                    <label for="nome">Nome:</label>
+                    <!-- label ligado ao input -->
+                    <input type="text" id="nome" name="nome">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+
+                    <button type="submit">Enviar</button>
+                    <!-- Botão de envio -->
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+    <!-- Rodapé do site -->
+
+        <address>
+        <!-- Informações de autoria/contato -->
+            Criado por <a href="#">Seu Nome</a><br>
+            <time datetime="2026-02-05">2026</time>
+            <!-- time representa data -->
+        </address>
+
+        <p>&copy; Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
